@@ -13,7 +13,7 @@ class Encfixture < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/junara/encfixture/releases/download/v0.1.0/encfixture_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c637240553f5ae0c11626afbe1ca3259bc4416b11d4e5bbf5d39efd2068601fe"
+      sha256 "51446fb790e8ccddf98c6774e1b6e6246572df0d006a9f275059cbb0de8492bc"
 
       define_method(:install) do
         bin.install "encfixture"
@@ -21,7 +21,7 @@ class Encfixture < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/junara/encfixture/releases/download/v0.1.0/encfixture_0.1.0_darwin_arm64.tar.gz"
-      sha256 "88553be570f06b7fd493adac17ab0a71a84e69572592e22c43aed29fcf6b0a44"
+      sha256 "d2e67c7947361b651f44b8e3d807f27a7e65c53633833cc1e19fb8768cf9db16"
 
       define_method(:install) do
         bin.install "encfixture"
@@ -32,14 +32,14 @@ class Encfixture < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/junara/encfixture/releases/download/v0.1.0/encfixture_0.1.0_linux_amd64.tar.gz"
-      sha256 "7b4b8527ad80127b6ad436e667c9a9ae70652420e7bd331e5920b3b2a4e9417e"
+      sha256 "20e121e3a3dcc6f137ea759a5faf423f1db61b5393e0aa512e6462eb27f34a33"
       define_method(:install) do
         bin.install "encfixture"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/junara/encfixture/releases/download/v0.1.0/encfixture_0.1.0_linux_arm64.tar.gz"
-      sha256 "053f38f4b624e188e1078c5432c77096d59b079ad93dfafbb70d30c34ffa443f"
+      sha256 "e610bf39bf4cb34bdb87869bcd5df69f9331e2c4066935d43c86f96e7d8cc7c0"
       define_method(:install) do
         bin.install "encfixture"
       end
