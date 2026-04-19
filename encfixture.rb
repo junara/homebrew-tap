@@ -5,23 +5,23 @@
 class Encfixture < Formula
   desc "Generate dummy media files for ffmpeg encoding tests"
   homepage "https://github.com/junara/encfixture"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   depends_on "ffmpeg"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/junara/encfixture/releases/download/v0.1.1/encfixture_0.1.1_darwin_amd64.tar.gz"
-      sha256 "094226e6988176a9f525d1325d6a075cdedb9b261298130d8bfea715310480b3"
+      url "https://github.com/junara/encfixture/releases/download/v0.1.2/encfixture_0.1.2_darwin_amd64.tar.gz"
+      sha256 "cf4da719230be3c46d013e71c3fce356f7d83793a4d76161af2094a6b4e91735"
 
       define_method(:install) do
         bin.install "encfixture"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/junara/encfixture/releases/download/v0.1.1/encfixture_0.1.1_darwin_arm64.tar.gz"
-      sha256 "ccb5abd42e2240056090c5b10a9b26de6de72c740f0efb3ab73ef35a7ec0983c"
+      url "https://github.com/junara/encfixture/releases/download/v0.1.2/encfixture_0.1.2_darwin_arm64.tar.gz"
+      sha256 "4b287dcc4688b9b288e109f6086668d6e83b992e453258f77fd272e669b35d8f"
 
       define_method(:install) do
         bin.install "encfixture"
@@ -31,15 +31,15 @@ class Encfixture < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/junara/encfixture/releases/download/v0.1.1/encfixture_0.1.1_linux_amd64.tar.gz"
-      sha256 "675371c2ef826386c1f1a8ee33b2cc19f1d230d05028bfa7c8f400ade17b06ff"
+      url "https://github.com/junara/encfixture/releases/download/v0.1.2/encfixture_0.1.2_linux_amd64.tar.gz"
+      sha256 "1eee304d6513b578de1df1dbfc2d6deaae187fb1c7173d498bdb13294a62464e"
       define_method(:install) do
         bin.install "encfixture"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/junara/encfixture/releases/download/v0.1.1/encfixture_0.1.1_linux_arm64.tar.gz"
-      sha256 "f8402304de07e1350fcbef01b965b38bf14b87750de1c38057da70b9475f2800"
+      url "https://github.com/junara/encfixture/releases/download/v0.1.2/encfixture_0.1.2_linux_arm64.tar.gz"
+      sha256 "6ac37a7ea21a525668aa48fc99f0274f5f18f05f6181bf6df14f424e227ed199"
       define_method(:install) do
         bin.install "encfixture"
       end
